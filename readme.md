@@ -1,4 +1,4 @@
-# Angular 2 + Electron Sample
+# Angular 2 + Electron 例子
 
 这是一个 Angular2与 Electron 的例子
 
