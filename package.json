@@ -2,9 +2,8 @@
     "name": "image-size-calculator",
     "version": "0.0.1",
     "description": "image size calculator from angular2 and electron",
-    "main": "index.js",
+    "main": "app/main.js",
     "scripts": {
-        "build:back": "webpack --progress --profile --colors --display-error-details --display-cached",
         "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
         "electron": "electron app &",
         "start": "npm test && electron .",
