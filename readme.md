@@ -2,9 +2,11 @@
 
 这是一个 Angular2与 Electron 的例子
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Build Status](https://travis-ci.org/fuchao2012/angular2-electron.svg?branch=master)](https://travis-ci.org/fuchao2012/angular2-electron)
+[![MIT Licence](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 
-洗完以后完成了图片里的功能
+写完以后完成了图片里的功能
 
 ![image-size-calculator app](https://cdn.auth0.com/blog/angular2-electron/angular2-electron-5.png)
 
