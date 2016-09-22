@@ -11,6 +11,7 @@
     },
     "author": "Auth0",
     "license": "MIT",
+    "repository": "https://github.com/fuchao2012/angular2-electron-me.git",
     "devDependencies": {
         "electron-builder": "^7.3.0",
         "electron-packager": "^8.0.0",
