@@ -1,6 +1,6 @@
-var path = require('path');
-var webpack = require('webpack');
-var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
+var path = require('path')
+var webpack = require('webpack')
+var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin
 
 module.exports = {
   devtool: 'source-map',
@@ -16,7 +16,7 @@ module.exports = {
   },
 
   output: {
-    path: __dirname + '/build/',
+    path: path.join(__dirname, '/build/'),
     publicPath: 'build/',
     filename: '[name].js',
     sourceMapFilename: '[name].js.map',
@@ -24,22 +24,27 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['','.ts','.js','.json', '.css', '.html']
+    extensions: ['', '.ts', '.js', '.json', '.css', '.html']
   },
 
   module: {
-    loaders: [
-      {
-        test: /\.ts$/,
-        loader: 'ts',
-        exclude: [ /node_modules/ ]
-      }
-    ]
+    loaders: [{
+      test: /\.ts$/,
+      loader: 'ts',
+      exclude: [/node_modules/]
+    }]
   },
 
   plugins: [
-    new CommonsChunkPlugin({ name: 'angular2', filename: 'angular2.js', minChunks: Infinity }),
-    new CommonsChunkPlugin({ name: 'common',   filename: 'common.js' })
+    new CommonsChunkPlugin({
+      name: 'angular2',
+      filename: 'angular2.js',
+      minChunks: Infinity
+    }),
+    new CommonsChunkPlugin({
+      name: 'common',
+      filename: 'common.js'
+    })
   ],
-  target:'node-webkit'
-};
+  target: 'node-webkit'
+}
